@@ -30,7 +30,8 @@ document.addEventListener('DOMContentLoaded', function() {
 	var nums = notifications.length;
 	console.log(notifications);
 	let notes = d.getElementById("notifications");
-	console.log(notifications.length);	
+// 	console.log(notifications.length);
+	chrome.browserAction.setBadgeText({text: (nums).toString()});
 	for(let i=0;i<notifications.length;i++){
 		var note = d.createElement('li');
 		note.innerHTML = notifications[i].subject.title;
