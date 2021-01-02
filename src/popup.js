@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
   "https://api.github.com/notifications", 
   {
     headers: {
-      authorization: "token 5c73588c6dbd89a38d84f3a70025aecd628f22d0"
+      authorization: "token personal_token"
     }
   }
 )
